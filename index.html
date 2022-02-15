@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Widget</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" class="" />
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo:700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container"id= "weather-app">
+    <div class="card" >
+      <div class="row my-4">
+        <div class="col-8">
+        <div class="input-group">
+          <form class="search-form" id="search-form" >
+          <input 
+            type="search"
+            class="form-control"
+            placeholder="Type in a city..."
+            aria-label="Search"
+            aria-describedby="search-addon"
+            id="city-input"
+          />
+          <button type= "submit" type="button" class= "btn" id= "primary">Search</button>
+          <button type= "submit" type="button" class= "btn" id="current-location-button">Current</button>
+          
+          </form>
+
+       
+        </div>
+      </div>
+    </div>
+ <div class="row">
+   <div class="col-3 text-center">
+<h4 class="border rounded text-center">Saved<br />Places</h4>
+   <div class="btn-group-vertical">
+
+        <button type="button" class="btn btn-outline-primary my-2">London</button>
+        <button type="button" class="btn btn-outline-primary my-2">Berlin</button>
+        <button type="button" class="btn btn-outline-primary my-2">Miami</button>
+      </div>
+    </div>
+   <div class="col-9">
+     <div class="row mb-4">
+<div class="main-data">
+  <img src= "icons/noun_Rain Clouds_653883.png" alt="rainy"/>
+          <h1 class="location" id= "city">New York City</h1>
+          <h3 class="current temp"></h3>
+          <h5 class="date text-muted" id= "date"></h5>
+          <small> The rain will stop in 43 minutes.</small>
+</div>
+</div>
+   </div>
+   <div class= "row text-center forecast">
+     <div class="col-2">
+        <img src="icons/noun_clouds_653375.png" alt="cloudy" />
+                  <p class="day">Tue</p>
+                  <p class="temperature"><strong>53º</strong>/34º</p>
+     </div>
+     <div class="col-2">
+      <img src="icons/noun_Partly Sunny Cloud_655900.png" alt=" partly sunny" />
+                <p class="day">Wed</p>
+                <p class="temperature"><strong>54º</strong>/36º</p>
+   </div>
+     <div class="col-2">
+        <img src="icons/noun_clouds_653375.png" alt="cloudy" />
+        <p class="day">Thu</p>
+        <p class="temperature"><strong>55º</strong>/38º</p>
+   </div>
+   <div class="col-2">
+    <img src="icons/noun_Partly Sunny Cloud_655900.png" alt=" partly sunny"/>
+              <p class="day">Fri</p>
+              <p class="temperature"><strong>58º</strong>/41º</p>
+ </div>
+   <div class="col-2">
+      <img class= "sunny" src="icons/noun_sun_743346.png" alt="sunny" />
+      <p class="day">Sat</p>
+      <p class="temperature"><strong>61º</strong>/46º</p>
+    </div>
+    <div class="col-2">
+      <img class= "sunny" src="icons/noun_sun_743346.png" alt="sunny" />
+      <p class="day">Sun</p>
+      <p class="temperature"><strong>60º</strong>/44º</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src= "src/app_api_hw.js"></script>
+  </body>
+</html>
+
