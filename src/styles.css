@@ -8,6 +8,11 @@ body {
     rgb(240, 251, 244) 100.7%
   );
 }
+
+h6 {
+  text-align: center;
+  margin-bottom: 24px;
+}
 .btn {
   border-radius: 8px;
   color: #fff;
